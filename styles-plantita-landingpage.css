@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* hidden scrollbar
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*/
+
+body {
+  overflow-x: hidden;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+}
+
+
+nav {
+  font-size: 20px;
+  overflow-x: hidden;
+  background-color: #FAFAFC;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+}
+
+nav span {
+  font-size: 30px;
+  color: #6EA028;
+}
+
+header {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  position: absolute;
+  top: 100px;
+  left: 130px;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+}
+
+.jumbotron h1 {
+  color: #6EA028;
+}
+
+.jumbotron button {
+  font-size: 20px;
+  border-color: #6EA028;
+  background-color: #6EA028;
+}
+
+header img {
+  width: 100%;
+}
+
+.why-buy {
+  overflow-x: hidden;
+  background-color: #FAF1E0;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+}
+
+.description {
+  margin: 10% 0;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description h1 {
+  color: #6EA028;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding-right: 20px;
+  line-height: 2em;
+  font-size: 18px;
+}
+
+.info-box {
+  background-color: white;
+  overflow-x: hidden;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+}
+
+.info {
+  width: 30%;
+  font-size: 18px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px solid #DAF5A4;
+}
+
+.info img {
+  height: 100px;
+  float: right;
+  margin: 10px;
+}
+
+.info h2 {
+  color: #6EA028;
+}
+
+.call-action-box {
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  background-image: url("img/plants-bottom.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #FAFAFC;
+  overflow-x: hidden;
+  text-align: center;
+  height: 400px;
+}
+
+.call-action-box h1 {
+  color: #6EA028;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.call-action-box button {
+  font-size: 20px;
+  border-color: #6EA028;
+  background-color: #6EA028;
+}
+
+footer {
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  background-color: #6EA028;
+  overflow-x: hidden;
+  padding: 40px;
+  color: white;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FCB040;
+}
+
+footer span {
+    text-align: center;
+}
+
+footer input {
+  margin-left: 10px;
+}
+
+.fa {
+  width: 30px;
+  padding: 10px;
+  margin: 5px 2px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 991px) {
+
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .info:last-child {
+    margin-bottom: 0;
+  }
+
+  .info img {
+    float: none;
+    position: relative;
+    top: 0;
+    left: 60%;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .hr-footer {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 920px) {
+
+  .jumbotron {
+    top: 80px;
+    left: 100px;
+  }
+
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+
+  .jumbotron p {
+    font-size: 18px;
+  }
+
+  .why-buy h1 {
+    font-size: 35px;
+  }
+
+  .why-buy ul {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FAFAFC;
+  }
+
+  .jumbotron {
+    width: 70%;
+    margin: 5% auto;
+    position: static;
+    text-align: center;
+  }
+
+  .left-plant,
+  .right-plant {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .info:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .why-buy h1 {
+        padding: 0 1px;
+        font-size: 33px;
+    }
+
+    .info img {
+      top: 0;
+      left: 0;
+    }
+
+}
