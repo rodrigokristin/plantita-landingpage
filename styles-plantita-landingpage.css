@@ -8,21 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* hidden scrollbar
-html::-webkit-scrollbar {
-  display: none;
-}
-html {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-*/
-
 body {
   overflow-x: hidden;
   font-family: 'Dosis', Helvetica, Arial, sans-serif;
 }
-
 
 nav {
   font-size: 20px;
